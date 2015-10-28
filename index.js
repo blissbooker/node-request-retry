@@ -14,7 +14,7 @@ var RetryStrategies = require('./strategies');
 
 var DEFAULTS = {
   maxAttempts: 5, // try 5 times
-  retryDelay: 5000, // wait for 5s before trying again
+  retryDelay: 1, // wait for 1ms before trying again
 };
 
 function Request(options, f, maxAttempts, retryDelay) {
